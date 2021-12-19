@@ -1,4 +1,7 @@
 <html>
+    <head>
+        <title>Login/SignUp</title>
+        </head>
 <style>
 body {font-family: Arial, Tahoma, Georgia;}
 * {box-sizing: border-box;}
@@ -141,10 +144,9 @@ hr {
 }
 
 .vertical-center {
-  margin: 1;
-  top: 60%;
-  left: 30%;
- /* bottom: 50%;*/
+    margin: 0;
+  position: relative;
+  top: 30%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
 }
@@ -152,7 +154,7 @@ hr {
 <body align=center>
 <h2>Order Booking System</h2>
 <hr>
-
+<div class="vertical-center" align=center>
 <h2>Sign Up</h2>
 
 <button onclick="document.getElementById('btns1').style.display='block'" style="width:auto;"> Admin Sign Up</button>
@@ -165,7 +167,7 @@ hr {
 <button onclick="document.getElementById('btns3').style.display='block'" style="width:auto;"> Admin Sign In</button>
 
 <button onclick="document.getElementById('btns4').style.display='block'" style="width:auto;"> User Sign In</button>
-
+</div>
 <div id="btns1" class="modal">
   <span onclick="document.getElementById('btns1').style.display='none'" class="close" title="Close Modal">&times;</span>
   <form class="modal-content" action="/actionpage.php">
